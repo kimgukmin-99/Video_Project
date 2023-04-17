@@ -1,33 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="동영상앨범"
-        android:textSize="18sp"/>
+    tools:context=".MainActivity"
+    android:background="@drawable/border">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/video1"
         android:orientation="vertical"
         android:layout_marginTop="5dp"
+        android:background="#3061380B"
         android:clickable="true"
         android:onClick="showVideo"
-        android:tag="1">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="동영상 1"
-            android:textSize="18sp"
-            />
-
+        android:tag="1"
+        >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -37,9 +28,29 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="60dp"
-                android:src="@drawable/picture"
+                android:src="@drawable/puma"
                 android:paddingRight="5dp"
                 />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="퓨마 야옹"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:text="00:00:20"
+                    android:textSize="18sp"/>
+            </LinearLayout>
 
         </LinearLayout>
 
@@ -54,13 +65,6 @@
         android:tag="2"
         >
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="동영상 2"
-            android:textSize="18sp"
-            />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -68,9 +72,29 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="60dp"
-                android:src="@drawable/picture"
+                android:src="@drawable/dog"
                 android:paddingRight="5dp"
                 />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="강아지"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:text="00:00:14"
+                    android:textSize="18sp"/>
+            </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>
@@ -86,13 +110,6 @@
             android:tag="3"
             >
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="동영상 3"
-                android:textSize="18sp"
-                />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -100,9 +117,29 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/picture"
+                    android:src="@drawable/duck"
                     android:paddingRight="5dp"
                     />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="오리"
+                    android:textSize="18sp"
+                    />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp"
+                        android:text="00:00:14"
+                        android:textSize="18sp"/>
+                </LinearLayout>
 
             </LinearLayout>
         </LinearLayout>

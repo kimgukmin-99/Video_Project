@@ -18,7 +18,7 @@ public class PlayVideo extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.video_play);
-        setTitle("선택된 동영상");
+        setTitle("동영상 재생");
 
         TextView title = (TextView) findViewById(R.id.title);
         VideoView videoView = (VideoView) findViewById(R.id.videoview);
