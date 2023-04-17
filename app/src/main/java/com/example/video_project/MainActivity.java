@@ -13,21 +13,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("동영상 목록");
+
     }
 
     public void showVideo(View view){
         int id = view.getId();
         String tag;
 
+
+
         switch (id){
             case R.id.video1:
                 tag = "1";
+
                 break;
             case R.id.video2:
                 tag = "2";
+
                 break;
             case R.id.video3:
                 tag = "3";
+
                 break;
             default:
                 tag = "0";

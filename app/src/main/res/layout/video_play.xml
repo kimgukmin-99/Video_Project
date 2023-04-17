@@ -16,7 +16,8 @@
     android:layout_height="wrap_content"
     android:textSize="20sp"
     android:textColor="#000000"
-    android:background="#3061380B"/>
+    android:background="#3061380B"
+    android:gravity="center"/>
 
 
 <VideoView

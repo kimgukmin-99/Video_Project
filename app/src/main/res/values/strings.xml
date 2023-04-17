@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Video_Project</string>
+    <string name="title1">PUMA</string>
+    <string name = "title2">DOG</string>
+    <string name = "title3">DUCK</string>
 </resources>

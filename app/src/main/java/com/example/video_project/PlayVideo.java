@@ -21,26 +21,32 @@ public class PlayVideo extends AppCompatActivity {
         setTitle("동영상 재생");
 
         TextView title = (TextView) findViewById(R.id.title);
+
         VideoView videoView = (VideoView) findViewById(R.id.videoview);
 
         Intent it = getIntent();
 
         String tag = it.getStringExtra("data");
+        String videoTitle = "";
 
         switch (tag) {
             case "1":
                 uri = Uri.parse("android.resource://" + getPackageName() + "/raw/animal");
+                videoTitle = "Puma";
                 break;
             case "2":
                 uri = Uri.parse("android.resource://" + getPackageName() + "/raw/dog");
+                videoTitle = "Dog";
                 break;
 
             case "3":
                 uri = Uri.parse("android.resource://" + getPackageName() + "/raw/duck");
+                videoTitle = "Duck";
                 break;
             default:
                 break;
         }
+        title.setText(videoTitle);
         videoView.setVideoURI(uri);
         videoView.start();
 
